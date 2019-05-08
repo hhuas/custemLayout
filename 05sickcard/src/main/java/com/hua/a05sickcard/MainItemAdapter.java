@@ -2,11 +2,14 @@ package com.hua.a05sickcard;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -45,10 +48,17 @@ public class MainItemAdapter extends MyBaseAdapter<MainItemAdapter.MyViewHolder>
         for (int y = 0; y < myViewHolder.count; y++) {
             list.add("");
         }
+
+        int resId = R.anim.layout_animation_fall_down;
+        LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(getInflater().getContext(), resId);
+        myViewHolder.item_sick_rcv.setLayoutAnimation(animation);
+
         MainChildItemAdapter mainChildItemAdapter = new MainChildItemAdapter(getInflater().getContext());
         myViewHolder.item_sick_rcv.setLayoutManager(new LinearLayoutManager(getInflater().getContext(), LinearLayoutManager.VERTICAL, false));
         myViewHolder.item_sick_rcv.setAdapter(mainChildItemAdapter);
+
         mainChildItemAdapter.notifyDataSetChanged(list);
+
 
     }
 
