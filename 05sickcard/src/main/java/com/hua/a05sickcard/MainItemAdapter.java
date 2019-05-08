@@ -44,14 +44,14 @@ public class MainItemAdapter extends MyBaseAdapter<MainItemAdapter.MyViewHolder>
         } else {
             myViewHolder.item_sick_zhedie.setText("展开");
             myViewHolder.item_ll_zhedie.setVisibility(View.GONE);
+            int resId = R.anim.layout_animation_fall_down;
+            LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(getInflater().getContext(), resId);
+            myViewHolder.item_sick_rcv.setLayoutAnimation(animation);
         }
         for (int y = 0; y < myViewHolder.count; y++) {
             list.add("");
         }
 
-        int resId = R.anim.layout_animation_fall_down;
-        LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(getInflater().getContext(), resId);
-        myViewHolder.item_sick_rcv.setLayoutAnimation(animation);
 
         MainChildItemAdapter mainChildItemAdapter = new MainChildItemAdapter(getInflater().getContext());
         myViewHolder.item_sick_rcv.setLayoutManager(new LinearLayoutManager(getInflater().getContext(), LinearLayoutManager.VERTICAL, false));
