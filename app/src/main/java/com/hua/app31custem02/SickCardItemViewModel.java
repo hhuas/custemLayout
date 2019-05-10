@@ -32,6 +32,7 @@ public class SickCardItemViewModel extends ItemViewModel<SickCardViewModel> {
 
     public void initData() {
         dataObservableList.clear();
+        dataAdapter.notifyDataSetChanged();
         for (int i = 0; i < 4; i++) {
             SickCardChildItemViewModel sickCardChildItemViewModel = new SickCardChildItemViewModel(viewModel, isResult.get());
             dataObservableList.add(sickCardChildItemViewModel);
@@ -48,6 +49,7 @@ public class SickCardItemViewModel extends ItemViewModel<SickCardViewModel> {
         public void call() {
             isZheDie.set(!isZheDie.get());
             initData();
+
         }
     });
 }

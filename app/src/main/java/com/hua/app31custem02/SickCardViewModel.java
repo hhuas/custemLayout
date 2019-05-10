@@ -3,8 +3,11 @@ package com.hua.app31custem02;
 import android.app.Application;
 import android.databinding.ObservableArrayList;
 import android.databinding.ObservableBoolean;
+import android.databinding.ObservableField;
 import android.databinding.ObservableList;
 import android.support.annotation.NonNull;
+
+import com.hua.app31custem02.adapter.MyOnScrollListener;
 
 import me.goldze.mvvmhabit.base.BaseViewModel;
 import me.tatarka.bindingcollectionadapter2.BindingRecyclerViewAdapter;
