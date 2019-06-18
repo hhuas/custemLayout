@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="当前:"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_locate_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="沈阳市"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="热门城市"
+            android:textColor="#333333" />
+
+        <GridView
+            android:id="@+id/gv_popwindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:horizontalSpacing="14dp"
+            android:numColumns="4"
+            android:overScrollMode="never"
+            android:paddingLeft="16dp"
+            android:paddingTop="14dp"
+            android:paddingRight="46dp"
+            android:paddingBottom="14dp"
+            android:scrollbars="none"
+            android:verticalSpacing="14dp" />
+
+        <ListView
+            android:id="@+id/lv_words2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00ffffff"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_word2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="#44000000"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:elevation="10dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.hua.a10indexview.IndexView
+            android:id="@+id/iv_index2"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            app:size_zm_height="12"
+            app:word_select_color="#ff0000"
+            app:word_unselect_color="#888888" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

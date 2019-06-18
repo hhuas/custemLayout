@@ -1,1 +1,1 @@
-include ':app', ':01menuyouku', ':02viewpagersystem', ':03camerasys', ':04viewpagercustem', ':05sickcard', ':06mvvmdatabinding01', ':07mvvmdatabinding02'
+include ':app', ':01menuyouku', ':02viewpagersystem', ':03camerasys', ':04viewpagercustem', ':05sickcard', ':06mvvmdatabinding01', ':07mvvmdatabinding02', ':08mvvmhabittest01', ':09mvvmmaster312', ':10indexview', ':11gsyvideo', ':12statusbar'

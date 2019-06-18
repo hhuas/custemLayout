@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <declare-styleable name="IndexView">
+       <attr name="size_zm_height" format="integer" />
+       <attr name="word_select_color" format="reference|color"/>
+       <attr name="word_unselect_color" format="reference|color"/>
+
+   </declare-styleable>
+</resources>
