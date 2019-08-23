@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">16loginandindex</string>
+    <string name="liebiao">列表</string>
+    <string name="access_token">access_token:</string>
+    <string name="token_type">token_type:</string>
+    <string name="refresh_token">refresh_token:</string>
+    <string name="expires_in">expires_in:</string>
+    <string name="scope">scope:</string>
+    <string name="jti">jti:</string>
+</resources>

@@ -3,12 +3,35 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <compositeConfiguration>
-          <compositeBuild compositeDefinitionSource="SCRIPT" />
-        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/01menuyouku" />
+            <option value="$PROJECT_DIR$/02viewpagersystem" />
+            <option value="$PROJECT_DIR$/03camerasys" />
+            <option value="$PROJECT_DIR$/04viewpagercustem" />
+            <option value="$PROJECT_DIR$/05sickcard" />
+            <option value="$PROJECT_DIR$/06mvvmdatabinding01" />
+            <option value="$PROJECT_DIR$/07mvvmdatabinding02" />
+            <option value="$PROJECT_DIR$/08mvvmhabittest01" />
+            <option value="$PROJECT_DIR$/09mvvmmaster312" />
+            <option value="$PROJECT_DIR$/10indexview" />
+            <option value="$PROJECT_DIR$/11gsyvideo" />
+            <option value="$PROJECT_DIR$/12statusbar" />
+            <option value="$PROJECT_DIR$/13qrcode" />
+            <option value="$PROJECT_DIR$/14welcomeview" />
+            <option value="$PROJECT_DIR$/15java8study01" />
+            <option value="$PROJECT_DIR$/16loginandindex" />
+            <option value="$PROJECT_DIR$/17mvptest01" />
+            <option value="$PROJECT_DIR$/18retrofitclient" />
+            <option value="$PROJECT_DIR$/19kotlintest01" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
         <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
       </GradleProjectSettings>
     </option>
   </component>
