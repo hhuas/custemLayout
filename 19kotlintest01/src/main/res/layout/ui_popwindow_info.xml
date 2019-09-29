@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="38dp"
+        android:background="@drawable/radius_white_8"
+        android:id="@+id/ui_popwindow_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="输入邀请码"
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="注：成功绑定后123123123123123123123123123123123123123123123123123123123123123123123不能更换邀请人"
+            android:textColor="#33000000"
+            android:textSize="14dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
