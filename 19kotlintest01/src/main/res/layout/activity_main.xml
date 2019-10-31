@@ -17,13 +17,13 @@
         android:id="@+id/main_btn02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="main_btn02" />
+        android:text="main_realm" />
 
     <Button
         android:id="@+id/main_btn03"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="main_btn03" />
+        android:text="main_flowable" />
 
     <Button
         android:id="@+id/main_btn04"

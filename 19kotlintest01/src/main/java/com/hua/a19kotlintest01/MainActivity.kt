@@ -1,11 +1,14 @@
 package com.hua.a19kotlintest01
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.hua.a19kotlintest01.http.RetrofitUtil
+import com.hua.a19kotlintest01.ui.FlowableActivity
+import com.hua.a19kotlintest01.ui.RealmActivity
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
@@ -21,8 +24,10 @@ class MainActivity : AppCompatActivity() {
             main_btn05.visibility = View.GONE;
         }
         main_btn02.setOnClickListener {
+            startActivity(Intent(this,RealmActivity::class.java))
         }
         main_btn03.setOnClickListener {
+            startActivity(Intent(this,FlowableActivity::class.java))
         }
         main_btn04.setOnClickListener {
         }
